@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(to right, lime, #00d4ff);
+}
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+
+  #container {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 782px) {
+  body {
+    min-width: 768px;
+  }
+
+  #container {
+    width: 768px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 781px) and (min-width: 480px) {
+  body {
+    min-width: 480px;
+  }
+
+  #container {
+    width: 480px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    min-width: 320px;
+  }
+
+  #container {
+    width: 320px;
+    margin: auto;
+  }
+}
