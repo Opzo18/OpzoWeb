@@ -1,17 +1,23 @@
 html {
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: linear-gradient(to right, lime, #00d4ff);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #container {
-  margin: 0;
+  position: relative;
 }
 
-main img {
+#obrazek {
   width: 100%;
+  position: relative;
+  top: 20vh;
 }
 
 @media (min-width: 1200px) {
