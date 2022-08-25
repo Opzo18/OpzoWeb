@@ -1,5 +1,17 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(to right, lime, #00d4ff);
+}
+
+#container {
+  margin: 0;
+}
+
+main img {
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
