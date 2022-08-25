@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #fff;
-  --color-main: #000;
+  --color-bg: #000;
+  --color-main: #fff;
 }
 
 * {
@@ -35,39 +35,6 @@ h1 {
   font-size: 48px;
 }
 
-input {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-header button {
-  background-color: #000;
-  border: solid 4px #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  height: 100px;
-  outline-width: 5px;
-  position: relative;
-  width: 200px;
-}
-
-.icon {
-  background-color: grey;
-  border-radius: 100%;
-  content: "";
-  display: block;
-  height: 60px;
-  margin: 16px 25px;
-  position: relative;
-  width: 60px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
 span {
   bottom: 100%;
   color: var(--color-main);
@@ -91,6 +58,15 @@ p {
   text-align: left;
 }
 
+a {
+  text-decoration: none;
+  color: lime;
+}
+
+a:hover {
+  color: rgb(215, 5, 223);
+}
+
 .imgIcon {
   font-size: 24px;
 }
@@ -110,88 +86,6 @@ main button {
 main button:hover {
   background: var(--color-main);
   color: var(--color-bg);
-}
-
-/* LIGT MODE */
-
-body.light {
-  --color-bg: #fff;
-  --color-main: #000;
-}
-
-body.light .icon {
-  background: grey;
-  transform: translateX(0);
-}
-
-body.light .icon::after {
-  content: none;
-}
-
-body.light a {
-  text-decoration: none;
-  color: rgb(3, 88, 185);
-}
-
-body.light a:hover {
-  color: rgb(223, 183, 5);
-}
-
-/* DARK MODE */
-
-body.dark {
-  --color-bg: #000;
-  --color-main: #fff;
-}
-
-body.dark .icon {
-  background: yellow;
-  transform: translateX(85px);
-}
-
-body.dark .icon::after {
-  position: absolute;
-  background-color: #000;
-  border-radius: 100%;
-  content: "";
-  display: block;
-  height: 50px;
-  width: 45px;
-  top: -5px;
-  left: -5px;
-}
-
-body.dark a {
-  text-decoration: none;
-  color: lime;
-}
-
-body.dark a:hover {
-  color: rgb(215, 5, 223);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    --color-bg: #000;
-    --color-main: #fff;
-  }
-
-  body .icon {
-    background: yellow;
-    transform: translateX(85px);
-  }
-
-  body .icon::after {
-    position: absolute;
-    background-color: #000;
-    border-radius: 100%;
-    content: "";
-    display: block;
-    height: 50px;
-    width: 45px;
-    top: -5px;
-    left: -5px;
-  }
 }
 
 @media (min-width: 1200px) {
