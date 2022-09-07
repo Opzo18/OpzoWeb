@@ -23,70 +23,8 @@ body {
   overflow-y: hidden;
 }
 
-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-span {
-  bottom: 100%;
-  color: var(--color-main);
-  font-size: 20px;
-  left: 50%;
-  padding: 12px 0;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 100%;
-}
-
-main {
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
-}
-
-p {
-  font-size: 24px;
-  padding: 12px 0;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-  color: lime;
-}
-
-a:hover {
-  color: rgb(215, 5, 223);
-}
-
-.imgIcon {
-  font-size: 24px;
-}
-
-main button {
-  border: solid 0.3vw;
-  background: var(--color-bg);
-  color: var(--color-main);
-  cursor: pointer;
-  font-family: Helvetica, sans-serif;
-  font-size: 32px;
-  margin: 24px 0;
-  padding: 24px 32px;
-  transition: background 0.3s, color 0.3s;
-}
-
-main button:hover {
-  background: var(--color-main);
-  color: var(--color-bg);
+#clock {
+  font-size: large;
 }
 
 @media (min-width: 1200px) {
