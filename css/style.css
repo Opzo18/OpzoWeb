@@ -10,7 +10,9 @@
 }
 
 body {
-
+  background-image: url("../images/kot.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   /* background: var(--color-bg); */
   color: var(--color-main);
   display: flex;
